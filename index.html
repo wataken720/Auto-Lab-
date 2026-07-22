@@ -1,20 +1,286 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-<title>オート予想</title>
+<meta charset="UTF-8">
+<title>Auto-Lab | オートレースデータ分析</title>
+
+<style>
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: #f5f6f8;
+  color: #222;
+  margin: 0;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 5px 0 0;
+  color: #aaa;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+.race-title {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+.badge {
+  background:#e60012;
+  color:white;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+
+th,td {
+  padding:12px;
+  border-bottom:1px solid #eee;
+  text-align:center;
+}
+
+
+th {
+  background:#f0f0f0;
+}
+
+
+.number {
+  font-size:22px;
+  font-weight:bold;
+}
+
+
+.player {
+  text-align:left;
+}
+
+
+.rate {
+  font-weight:bold;
+  color:#0066cc;
+}
+
+
+.analysis {
+  display:flex;
+  gap:10px;
+}
+
+
+.box {
+  flex:1;
+  background:#f7f7f7;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+
+.star {
+  color:#ff9800;
+  font-size:20px;
+}
+
+
+</style>
+
 </head>
+
 
 <body>
 
-<h1>🏁 オートレース予想</h1>
 
-<h2>伊勢崎 12R</h2>
+<header>
 
-<p>1号車 青山周平 ◎</p>
-<p>2号車 鈴木圭一郎 ○</p>
-<p>3号車 金子大輔 ▲</p>
+<h1>🏁 Auto-Lab-</h1>
+<p>オートレース データ分析サイト</p>
+
+</header>
+
+
+
+<div class="container">
+
+
+<div class="card">
+
+<div class="race-title">
+
+<h2>伊勢崎オート 12R</h2>
+
+<span class="badge">優勝戦</span>
+
+</div>
+
+<p>
+開催日：2026/07/22<br>
+天候：晴　走路：良
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>出走表</h2>
+
+
+<table>
+
+<tr>
+<th>車</th>
+<th>選手</th>
+<th>ハンデ</th>
+<th>勝率</th>
+</tr>
+
+
+<tr>
+<td class="number">1</td>
+<td class="player">青山 周平</td>
+<td>0m</td>
+<td class="rate">8.45</td>
+</tr>
+
+
+<tr>
+<td class="number">2</td>
+<td class="player">鈴木 圭一郎</td>
+<td>0m</td>
+<td class="rate">8.32</td>
+</tr>
+
+
+<tr>
+<td class="number">3</td>
+<td class="player">永井 大介</td>
+<td>10m</td>
+<td class="rate">7.90</td>
+</tr>
+
+
+</table>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>選手分析</h2>
+
+
+<div class="analysis">
+
+
+<div class="box">
+
+<p>スタート力</p>
+<p class="star">★★★★★</p>
+
+</div>
+
+
+<div class="box">
+
+<p>逃げ性能</p>
+<p class="star">★★★★☆</p>
+
+</div>
+
+
+<div class="box">
+
+<p>追込力</p>
+<p class="star">★★★★★</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>近況データ</h2>
+
+<table>
+
+<tr>
+<th>項目</th>
+<th>数値</th>
+</tr>
+
+<tr>
+<td>直近10走 1着率</td>
+<td>60%</td>
+</tr>
+
+<tr>
+<td>平均ST</td>
+<td>0.08</td>
+</tr>
+
+<tr>
+<td>良走路勝率</td>
+<td>75%</td>
+</tr>
+
+</table>
+
+
+</div>
+
+
+
+</div>
+
 
 </body>
-
 </html>
