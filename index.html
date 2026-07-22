@@ -1,120 +1,154 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 <meta charset="UTF-8">
-<title>Auto-Lab | オートレースデータ分析</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Auto-Lab- | オートレースデータ分析</title>
 
 <style>
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-  background: #f5f6f8;
-  color: #222;
-  margin: 0;
+    margin:0;
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+    background:#f4f5f7;
+    color:#222;
 }
+
+
+/* ヘッダー */
 
 header {
-  background: #111;
-  color: white;
-  padding: 20px;
+    background:#111;
+    color:white;
+    padding:20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 26px;
+.logo {
+    font-size:28px;
+    font-weight:bold;
 }
 
-header p {
-  margin: 5px 0 0;
-  color: #aaa;
+.subtitle {
+    color:#aaa;
+    margin-top:5px;
 }
 
+
+/* 全体 */
 
 .container {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 0 15px;
+    max-width:900px;
+    margin:auto;
+    padding:15px;
 }
 
+
+/* カード */
 
 .card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    background:white;
+    border-radius:14px;
+    padding:20px;
+    margin-bottom:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 
-.race-title {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+/* レース情報 */
 
+.race-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
 .badge {
-  background:#e60012;
-  color:white;
-  padding:5px 12px;
-  border-radius:20px;
-  font-size:14px;
+    background:#e60012;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
 }
 
+
+
+/* 表 */
 
 table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-
-th,td {
-  padding:12px;
-  border-bottom:1px solid #eee;
-  text-align:center;
+    width:100%;
+    border-collapse:collapse;
 }
 
 
 th {
-  background:#f0f0f0;
+    background:#eee;
 }
 
 
-.number {
-  font-size:22px;
-  font-weight:bold;
+th,td {
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
 }
 
 
-.player {
-  text-align:left;
+/* 車番 */
+
+.car {
+    font-size:22px;
+    font-weight:bold;
 }
 
 
-.rate {
-  font-weight:bold;
-  color:#0066cc;
+/* 評価 */
+
+.rating {
+    display:flex;
+    gap:10px;
 }
 
 
-.analysis {
-  display:flex;
-  gap:10px;
-}
-
-
-.box {
-  flex:1;
-  background:#f7f7f7;
-  padding:15px;
-  border-radius:10px;
-  text-align:center;
+.rating div {
+    flex:1;
+    background:#f5f5f5;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
 }
 
 
 .star {
-  color:#ff9800;
-  font-size:20px;
+    color:#ff9800;
+    font-size:22px;
+}
+
+
+/* データ */
+
+.data {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+
+.data div {
+    background:#f5f5f5;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+}
+
+
+.number {
+    font-size:24px;
+    font-weight:bold;
 }
 
 
@@ -123,154 +157,112 @@ th {
 </head>
 
 
+
 <body>
 
 
 <header>
 
-<h1>🏁 Auto-Lab-</h1>
-<p>オートレース データ分析サイト</p>
+<div class="logo">
+🏁 Auto-Lab-
+</div>
+
+<div class="subtitle">
+オートレース データ分析プラットフォーム
+</div>
 
 </header>
+
 
 
 
 <div class="container">
 
 
+
+<!-- レース情報 -->
+
 <div class="card">
 
-<div class="race-title">
 
-<h2>伊勢崎オート 12R</h2>
+<div class="race-header">
 
-<span class="badge">優勝戦</span>
+<h2>
+伊勢崎オート 12R
+</h2>
+
+<span class="badge">
+優勝戦
+</span>
 
 </div>
+
 
 <p>
-開催日：2026/07/22<br>
-天候：晴　走路：良
+📅 2026年7月22日<br>
+☀ 天候：晴　路面：良<br>
+🏎 8車立
 </p>
+
 
 </div>
 
 
 
 
+
+<!-- 出走表 -->
+
 <div class="card">
 
-<h2>出走表</h2>
+
+<h2>
+出走表
+</h2>
 
 
 <table>
+
 
 <tr>
 <th>車</th>
 <th>選手</th>
 <th>ハンデ</th>
-<th>勝率</th>
+<th>近況勝率</th>
 </tr>
 
 
 <tr>
-<td class="number">1</td>
-<td class="player">青山 周平</td>
+<td class="car">1</td>
+<td>青山 周平</td>
 <td>0m</td>
-<td class="rate">8.45</td>
+<td>8.45</td>
 </tr>
 
 
 <tr>
-<td class="number">2</td>
-<td class="player">鈴木 圭一郎</td>
+<td class="car">2</td>
+<td>鈴木 圭一郎</td>
 <td>0m</td>
-<td class="rate">8.32</td>
+<td>8.32</td>
 </tr>
 
 
 <tr>
-<td class="number">3</td>
-<td class="player">永井 大介</td>
+<td class="car">3</td>
+<td>永井 大介</td>
 <td>10m</td>
-<td class="rate">7.90</td>
+<td>7.90</td>
 </tr>
 
-
-</table>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h2>選手分析</h2>
-
-
-<div class="analysis">
-
-
-<div class="box">
-
-<p>スタート力</p>
-<p class="star">★★★★★</p>
-
-</div>
-
-
-<div class="box">
-
-<p>逃げ性能</p>
-<p class="star">★★★★☆</p>
-
-</div>
-
-
-<div class="box">
-
-<p>追込力</p>
-<p class="star">★★★★★</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h2>近況データ</h2>
-
-<table>
 
 <tr>
-<th>項目</th>
-<th>数値</th>
+<td class="car">4</td>
+<td>佐藤 摩弥</td>
+<td>10m</td>
+<td>7.55</td>
 </tr>
 
-<tr>
-<td>直近10走 1着率</td>
-<td>60%</td>
-</tr>
-
-<tr>
-<td>平均ST</td>
-<td>0.08</td>
-</tr>
-
-<tr>
-<td>良走路勝率</td>
-<td>75%</td>
-</tr>
 
 </table>
 
@@ -279,8 +271,134 @@ th {
 
 
 
+
+
+
+
+<!-- 選手分析 -->
+
+
+<div class="card">
+
+
+<h2>
+選手能力分析
+</h2>
+
+
+<div class="rating">
+
+
+<div>
+スタート
+<p class="star">
+★★★★★
+</p>
 </div>
+
+
+<div>
+逃げ性能
+<p class="star">
+★★★★☆
+</p>
+</div>
+
+
+<div>
+追込力
+<p class="star">
+★★★★★
+</p>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- データ -->
+
+
+<div class="card">
+
+
+<h2>
+過去データ
+</h2>
+
+
+<div class="data">
+
+
+<div>
+直近10走<br>
+<span class="number">
+7
+</span><br>
+勝利
+</div>
+
+
+<div>
+平均ST<br>
+<span class="number">
+0.08
+</span>
+</div>
+
+
+<div>
+良走路<br>
+<span class="number">
+82%
+</span>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- メモ -->
+
+<div class="card">
+
+
+<h2>
+Auto-Lab分析メモ
+</h2>
+
+
+<p>
+
+0m先行車が有利な展開。<br>
+スタート力の高い選手を中心に評価。
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
 
 
 </body>
+
 </html>
