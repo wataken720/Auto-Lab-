@@ -108,3 +108,43 @@ function closePlayer(){
     document.getElementById("playerModal").style.display="none";
 
 }
+
+function createRaceTable(){
+
+    const table = document.getElementById("raceTable");
+
+    table.innerHTML = "";
+
+    for(let name in players){
+
+        const player = players[name];
+
+        table.innerHTML += `
+        <tr>
+            <td class="car car${player.car}">
+                ${player.car}
+            </td>
+
+            <td>
+                <a href="#" onclick="openPlayer('${name}')">
+                    ${name}
+                </a>
+            </td>
+
+            <td>${player.handicap}</td>
+
+            <td>${player.time}</td>
+
+            <td>${player.diff}</td>
+
+            <td>${player.st}</td>
+
+            <td>${player.results}</td>
+
+        </tr>
+        `;
+    }
+
+}
+
+createRaceTable();
