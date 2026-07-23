@@ -20,18 +20,19 @@ const players = {
 
 function openPlayer(name){
 
+    const player = players[name];
+
     document.getElementById("playerName").innerHTML = "👤 " + name;
 
-    document.getElementById("playerRank").innerHTML = "S級S";
+    document.getElementById("playerRank").innerHTML = player.rank;
 
-    document.getElementById("playerTime").innerHTML = "3.31";
+    document.getElementById("playerTime").innerHTML = player.time;
 
-    document.getElementById("playerST").innerHTML = "0.08";
+    document.getElementById("playerST").innerHTML = player.st;
 
-    document.getElementById("playerDiff").innerHTML = "+0.08";
+    document.getElementById("playerDiff").innerHTML = player.diff;
 
-    document.getElementById("playerResults").innerHTML =
-    "①①②①③①①②③①";
+    document.getElementById("playerResults").innerHTML = player.results;
 
     document.getElementById("playerModal").style.display="block";
 
