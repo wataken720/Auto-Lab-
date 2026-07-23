@@ -1,3 +1,19 @@
+const race = {
+
+venue:"川口オート",
+
+raceNo:"12R",
+
+date:"2026-07-23",
+
+title:"優勝戦",
+
+weather:"晴",
+
+track:"良"
+
+};
+
 const players = {
 
 "青山 周平": {
