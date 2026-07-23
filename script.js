@@ -7,7 +7,7 @@ const players = {
     time: "3.29",
     st: "0.08",
     diff: "+0.08",
-    results: "①①②①③①①②③①"
+    results: "①①②①③①①②③①",
     evaluation:"◎"
 },
 
@@ -18,7 +18,7 @@ const players = {
     time: "3.28",
     st: "0.07",
     diff: "+0.05",
-    results: "①②①①②③①①②①"
+    results: "①②①①②③①①②①",
     evaluation:"◎"
     
 },
@@ -30,7 +30,7 @@ const players = {
     time: "3.34",
     st: "0.11",
     diff: "+0.01",
-    results: "③④②①⑤②③①②④"
+    results: "③④②①⑤②③①②④",
     evaluation:"◎"
 },
 
@@ -41,7 +41,7 @@ const players = {
     time: "3.36",
     st: "0.10",
     diff: "-0.07",
-    results: "⑤②③④①③②⑤④①"
+    results: "⑤②③④①③②⑤④①",
     evaluation:"◎"
 },
 
@@ -52,7 +52,7 @@ const players = {
     time: "3.33",
     st: "0.12",
     diff: "+0.10",
-    results: "①②①④①③①②①③"
+    results: "①②①④①③①②①③",
     evaluation:"◎"
 },
 
@@ -63,7 +63,7 @@ const players = {
     time: "3.35",
     st: "0.13",
     diff: "+0.00",
-    results: "②③④②①③②④③②"
+    results: "②③④②①③②④③②",
     evaluation:"◎"
 },
 
@@ -74,7 +74,7 @@ const players = {
     time: "3.37",
     st: "0.14",
     diff: "-0.11",
-    results: "③⑤②③④②⑤③②④"
+    results: "③⑤②③④②⑤③②④",
     evaluation:"◎"
 },
 
@@ -85,7 +85,7 @@ const players = {
     time: "3.30",
     st: "0.07",
     diff: "+0.15",
-    results: "①①①②①①③①②①"
+    results: "①①①②①①③①②①",
     evaluation:"◎"
 }
 
