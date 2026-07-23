@@ -181,3 +181,15 @@ function createRaceTable(){
 }
 
 createRaceTable();
+
+document.getElementById("raceTitle").innerHTML = race.title;
+
+document.getElementById("raceVenue").innerHTML = race.venue;
+
+document.getElementById("raceNo").innerHTML = race.raceNo;
+
+document.getElementById("raceDate").innerHTML = race.date;
+
+document.getElementById("raceWeather").innerHTML = race.weather;
+
+document.getElementById("raceTrack").innerHTML = race.track;
