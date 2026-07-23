@@ -16,26 +16,26 @@
 
 <div class="modal-content">
 
-<span class="close" onclick="closePlayer()">&times;</span>
+<span class="close" onclick="closePlayer()">×</span>
 
 <h2 id="playerName"></h2>
 
-<p><strong>ランク</strong>　S級S</p>
+<p><strong>ランク</strong>　<span id="playerRank"></span></p>
 
-<p><strong>試走平均</strong>　3.31</p>
+<p><strong>試走平均</strong>　<span id="playerTime"></span></p>
 
-<p><strong>平均ST</strong>　0.08</p>
+<p><strong>平均ST</strong>　<span id="playerST"></span></p>
 
-<p><strong>試走偏差</strong>　<span class="plus">+0.08</span></p>
+<p><strong>試走偏差</strong>　<span id="playerDiff"></span></p>
 
 <p><strong>近10走</strong></p>
 
-<p>①①②①③①①②③①</p>
+<p id="playerResults"></p>
 
 </div>
 
 </div>
-
+    
 <script>
 
 function openPlayer(){
