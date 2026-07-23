@@ -97,6 +97,12 @@ function openPlayer(name){
 
     document.getElementById("playerName").innerHTML = "👤 " + name;
 
+    document.getElementById("playerCar").innerHTML = player.car;
+
+    document.getElementById("playerHandicap").innerHTML = player.handicap;
+
+    document.getElementById("playerEvaluation").innerHTML = player.evaluation;
+
     document.getElementById("playerRank").innerHTML = player.rank;
 
     document.getElementById("playerTime").innerHTML = player.time;
