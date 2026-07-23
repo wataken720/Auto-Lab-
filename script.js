@@ -40,30 +40,29 @@ const players = {
         results: "①③②⑤①②③①④②"
     },
 
-    "黒川 京介": {
-        rank: "S級A",
-        time: "3.35",
-        st: "0.09",
-        diff: "+0.07",
-        results: "②①④③①②⑤①③②"
-    },
+   "早川 清太郎": {
+    rank: "S級S",
+    time: "3.35",
+    st: "0.13",
+    diff: "+0.00",
+    results: "②③④②①③②④③②"
+},
 
-    "金子 大輔": {
-        rank: "S級A",
-        time: "3.33",
-        st: "0.08",
-        diff: "+0.06",
-        results: "③①②②④①③②①④"
-    },
+"有吉 辰也": {
+    rank: "S級S",
+    time: "3.37",
+    st: "0.14",
+    diff: "-0.11",
+    results: "③⑤②③④②⑤③②④"
+},
 
-    "中村 雅人": {
-        rank: "S級A",
-        time: "3.36",
-        st: "0.10",
-        diff: "+0.09",
-        results: "④②①③②④①③②①"
-    }
-
+"木村 武之": {
+    rank: "S級S",
+    time: "3.30",
+    st: "0.07",
+    diff: "+0.15",
+    results: "①①①②①①③①②①"
+}
 };
 
 function openPlayer(name){
