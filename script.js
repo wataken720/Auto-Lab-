@@ -10,7 +10,7 @@ function openPlayer(name){
 
     document.getElementById("playerDiff").innerHTML = "+0.08";
 
-    document.getElementById("playerResults").innerHTML = 
+    document.getElementById("playerResults").innerHTML =
     "①①②①③①①②③①";
 
     document.getElementById("playerModal").style.display="block";
