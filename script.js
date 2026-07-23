@@ -1,5 +1,23 @@
 const race = {
 
+venue:"伊勢崎オート",
+
+raceNo:"12R",
+
+title:"優勝戦",
+
+date:"2026年7月22日",
+
+weather:"晴",
+
+track:"良",
+
+cars:8
+
+};
+
+const race = {
+
 venue:"川口オート",
 
 raceNo:"12R",
