@@ -13,7 +13,7 @@ const players = {
 
 "鈴木 圭一郎": {
     car:2,
-　　 handicap:"0m",
+    handicap:"0m",
     rank: "S級S",
     time: "3.28",
     st: "0.07",
