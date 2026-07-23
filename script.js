@@ -4,7 +4,7 @@ const players = {
     car:1,
     handicap:"0m",
     rank:"S級S",
-    time: "3.31",
+    time: "9.99",
     st: "0.08",
     diff: "+0.08",
     results: "①①②①③①①②③①"
