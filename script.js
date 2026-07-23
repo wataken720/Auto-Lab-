@@ -10,7 +10,9 @@ title:"優勝戦",
 
 weather:"晴",
 
-track:"良"
+track:"良",
+
+cars:8
 
 };
 
