@@ -4,10 +4,11 @@ const players = {
     car:1,
     handicap:"0m",
     rank:"S級S",
-    time: "9.99",
+    time: "3.29",
     st: "0.08",
     diff: "+0.08",
     results: "①①②①③①①②③①"
+    evaluation:"◎"
 },
 
 "鈴木 圭一郎": {
@@ -18,6 +19,8 @@ const players = {
     st: "0.07",
     diff: "+0.05",
     results: "①②①①②③①①②①"
+    evaluation:"◎"
+    
 },
 
 "永井 大介": {
@@ -28,6 +31,7 @@ const players = {
     st: "0.11",
     diff: "+0.01",
     results: "③④②①⑤②③①②④"
+    evaluation:"◎"
 },
 
 "佐藤 摩弥": {
@@ -38,6 +42,7 @@ const players = {
     st: "0.10",
     diff: "-0.07",
     results: "⑤②③④①③②⑤④①"
+    evaluation:"◎"
 },
 
 "高橋 貢": {
@@ -48,6 +53,7 @@ const players = {
     st: "0.12",
     diff: "+0.10",
     results: "①②①④①③①②①③"
+    evaluation:"◎"
 },
 
 "早川 清太郎": {
@@ -58,6 +64,7 @@ const players = {
     st: "0.13",
     diff: "+0.00",
     results: "②③④②①③②④③②"
+    evaluation:"◎"
 },
 
 "有吉 辰也": {
@@ -68,6 +75,7 @@ const players = {
     st: "0.14",
     diff: "-0.11",
     results: "③⑤②③④②⑤③②④"
+    evaluation:"◎"
 },
 
 "木村 武之": {
@@ -78,6 +86,7 @@ const players = {
     st: "0.07",
     diff: "+0.15",
     results: "①①①②①①③①②①"
+    evaluation:"◎"
 }
 
 };
@@ -140,6 +149,8 @@ function createRaceTable(){
             <td>${player.st}</td>
 
             <td>${player.results}</td>
+
+            <td>${player.evaluation}</td>
 
         </tr>
         `;
