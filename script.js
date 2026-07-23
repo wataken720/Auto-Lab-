@@ -1,7 +1,9 @@
 const players = {
 
 "青山 周平": {
-    rank: "S級S",
+    car:1,
+    handicap:"0m",
+    rank:"S級S",
     time: "3.31",
     st: "0.08",
     diff: "+0.08",
@@ -9,6 +11,8 @@ const players = {
 },
 
 "鈴木 圭一郎": {
+    car:2,
+　　 handicap:"0m",
     rank: "S級S",
     time: "3.28",
     st: "0.07",
@@ -17,6 +21,8 @@ const players = {
 },
 
 "永井 大介": {
+    car:3,
+    handicap:"10m",
     rank: "S級S",
     time: "3.34",
     st: "0.11",
@@ -25,6 +31,8 @@ const players = {
 },
 
 "佐藤 摩弥": {
+    car:4,
+    handicap:"10m",
     rank: "S級S",
     time: "3.36",
     st: "0.10",
@@ -33,6 +41,8 @@ const players = {
 },
 
 "高橋 貢": {
+    car:5,
+    handicap:"20m",
     rank: "S級S",
     time: "3.33",
     st: "0.12",
@@ -41,6 +51,8 @@ const players = {
 },
 
 "早川 清太郎": {
+    car:6,
+    handicap:"20m",
     rank: "S級S",
     time: "3.35",
     st: "0.13",
@@ -49,6 +61,8 @@ const players = {
 },
 
 "有吉 辰也": {
+    car:7,
+    handicap:"30m",
     rank: "S級S",
     time: "3.37",
     st: "0.14",
@@ -57,6 +71,8 @@ const players = {
 },
 
 "木村 武之": {
+    car:8,
+    handicap:"30m",
     rank: "S級S",
     time: "3.30",
     st: "0.07",
