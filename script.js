@@ -193,3 +193,17 @@ document.getElementById("raceDate").innerHTML = race.date;
 document.getElementById("raceWeather").innerHTML = race.weather;
 
 document.getElementById("raceTrack").innerHTML = race.track;
+
+document.getElementById("mainRaceVenue").innerHTML = race.venue;
+
+document.getElementById("mainRaceNo").innerHTML = race.raceNo;
+
+document.getElementById("mainRaceTitle").innerHTML = race.title;
+
+document.getElementById("mainRaceDate").innerHTML = race.date;
+
+document.getElementById("mainRaceWeather").innerHTML = race.weather;
+
+document.getElementById("mainRaceTrack").innerHTML = race.track;
+
+document.getElementById("mainRaceCars").innerHTML = race.cars;
