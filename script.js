@@ -33,14 +33,14 @@ const players = {
     },
 
     "佐藤 摩弥": {
-        rank: "S級S",
-        time: "3.34",
-        st: "0.11",
-        diff: "+0.12",
-        results: "①③②⑤①②③①④②"
-    },
+    rank: "S級S",
+    time: "3.34",
+    st: "0.11",
+    diff: "+0.12",
+    results: "①③②⑤①②③①④②"
+},
 
-   "早川 清太郎": {
+"早川 清太郎": {
     rank: "S級S",
     time: "3.35",
     st: "0.13",
@@ -63,6 +63,7 @@ const players = {
     diff: "+0.15",
     results: "①①①②①①③①②①"
 }
+
 };
 
 function openPlayer(name){
