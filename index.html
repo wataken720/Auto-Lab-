@@ -196,6 +196,32 @@ th,td {
     background:purple;
 }
 
+/* 試走偏差 */
+
+.plus{
+    color:#16a34a;
+    font-weight:bold;
+    background:#dcfce7;
+    padding:4px 8px;
+    border-radius:20px;
+}
+
+.normal{
+    color:#ca8a04;
+    font-weight:bold;
+    background:#fef9c3;
+    padding:4px 8px;
+    border-radius:20px;
+}
+
+.minus{
+    color:#dc2626;
+    font-weight:bold;
+    background:#fee2e2;
+    padding:4px 8px;
+    border-radius:20px;
+}
+    
 </style>
 
 </head>
@@ -271,9 +297,9 @@ th,td {
 <th>選手</th>
 <th>ハンデ</th>
 <th>試走</th>
+<th>偏差</th>
 <th>ST</th>
 <th>近10走</th>
-<th>勝率</th>
 <th>評価</th>
 </tr>
 
@@ -283,33 +309,31 @@ th,td {
 <td>青山 周平</td>
 <td>0m</td>
 <td>3.31</td>
+<td><span class="plus">+0.08</span></td>
 <td>0.08</td>
 <td>①①②①③①①②③①</td>
-<td>8.45</td>
 <td>◎</td>
 </tr>
-
 
 <tr>
 <td class="car car2">2</td>
 <td>鈴木 圭一郎</td>
 <td>0m</td>
 <td>3.28</td>
+<td><span class="plus">+0.12</span></td>
 <td>0.09</td>
 <td>②①①③①②①①④②</td>
-<td>8.32</td>
 <td>○</td>
 </tr>
-
 
 <tr>
 <td class="car car3">3</td>
 <td>永井 大介</td>
 <td>10m</td>
 <td>3.34</td>
+<td><span class="normal">+0.01</span></td>
 <td>0.11</td>
 <td>③④②①⑤②③①②④</td>
-<td>7.90</td>
 <td>▲</td>
 </tr>
 
@@ -318,56 +342,54 @@ th,td {
 <td>佐藤 摩弥</td>
 <td>10m</td>
 <td>3.36</td>
+<td><span class="minus">-0.07</span></td>
 <td>0.10</td>
 <td>⑤②③④①③②⑤④①</td>
-<td>7.55</td>
 <td>△</td>
 </tr>
-
 
 <tr>
 <td class="car car5">5</td>
 <td>高橋 貢</td>
-<td>10m</td>
-<td>3.36</td>
-<td>0.10</td>
-<td>⑤②③④①③②⑤④①</td>
-<td>7.55</td>
-<td>△</td>
+<td>20m</td>
+<td>3.33</td>
+<td><span class="plus">+0.10</span></td>
+<td>0.12</td>
+<td>①②①④①③①②①③</td>
+<td>○</td>
 </tr>
 
 <tr>
 <td class="car car6">6</td>
 <td>早川 清太郎</td>
-<td>10m</td>
-<td>3.36</td>
-<td>0.10</td>
-<td>⑤②③④①③②⑤④①</td>
-<td>7.55</td>
+<td>20m</td>
+<td>3.35</td>
+<td><span class="normal">+0.00</span></td>
+<td>0.13</td>
+<td>②③④②①③②④③②</td>
 <td>△</td>
 </tr>
 
 <tr>
 <td class="car car7">7</td>
 <td>有吉 辰也</td>
-<td>10m</td>
-<td>3.36</td>
-<td>0.10</td>
-<td>⑤②③④①③②⑤④①</td>
-<td>7.55</td>
-<td>△</td>
+<td>30m</td>
+<td>3.37</td>
+<td><span class="minus">-0.11</span></td>
+<td>0.14</td>
+<td>③⑤②③④②⑤③②④</td>
+<td>注</td>
 </tr>
-
 
 <tr>
 <td class="car car8">8</td>
 <td>木村 武之</td>
-<td>10m</td>
-<td>3.36</td>
-<td>0.10</td>
-<td>⑤②③④①③②⑤④①</td>
-<td>7.55</td>
-<td>△</td>
+<td>30m</td>
+<td>3.30</td>
+<td><span class="plus">+0.15</span></td>
+<td>0.07</td>
+<td>①①①②①①③①②①</td>
+<td>◎</td>
 </tr>
 
 </table>
