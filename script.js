@@ -1,14 +1,14 @@
 const players = {
 
 "青山 周平": {
-    car:1,
-    handicap:"0m",
-    rank:"S級S",
-    time: "3.29",
-    st: "0.08",
-    diff: "+0.08",
-    results: "①①②①③①①②③①",
-    evaluation:"◎"
+car:1,
+handicap:"0m",
+rank:"S級S",
+time:"3.29",
+st:"0.08",
+diff:"+0.08",
+results:"①①②①③①①②③①",
+evaluation:"◎"
 },
 
 "鈴木 圭一郎": {
